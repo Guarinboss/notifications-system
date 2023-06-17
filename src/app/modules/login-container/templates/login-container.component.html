@@ -1,0 +1,56 @@
+<div class="d-flex justify-content-center align-items-center login-container">
+    <form>
+        <div class="form-row">
+            <div class="col-md-12 mb-3">
+                <label for="validationServer01">Nombre</label>
+                <input type="text" class="form-control is-valid" id="validationServer01" placeholder="First name"
+                    value="Mark" required>
+                <div class="valid-feedback">
+                    Luce bien!
+                </div>
+            </div>
+            <div class="col-md-12 mb-3">
+                <label for="validationServer02">Apellido</label>
+                <input type="text" class="form-control is-valid" id="validationServer02" placeholder="Last name"
+                    value="Otto" required>
+                <div class="valid-feedback">
+                    Luce bien!
+                </div>
+            </div>
+            <div class="col-md-12 mb-3">
+                <label for="validationServerUsername">Correo electronico</label>
+                <div class="input-group">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="inputGroupPrepend3">@</span>
+                    </div>
+                    <input type="text" class="form-control is-invalid" id="validationServerUsername"
+                        placeholder="Correo" aria-describedby="inputGroupPrepend3" required>
+                    <div class="invalid-feedback">
+                        Por favor escoge un correo electronico valido.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col-md-12 mb-3">
+                <label for="validationServer05">Numero de celular</label>
+                <input type="text" class="form-control is-invalid" id="validationServer05" placeholder="Telefono" required>
+                <div class="invalid-feedback">
+                    Por favor escoge numero valido.
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="form-check">
+                <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" required>
+                <label class="form-check-label" for="invalidCheck3">
+                    Acuerdo con los terminos y condiciones
+                </label>
+                <div class="invalid-feedback">
+                    Tu debes estar de acuerda antes de continuar
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-primary mt-4" type="submit">Guardar formulario</button>
+    </form>
+</div>
