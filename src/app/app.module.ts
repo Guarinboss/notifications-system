@@ -14,7 +14,7 @@ import { LoginContainerModule } from './modules/login-container/login-container.
     BrowserModule,
     AppRoutingModule,
     HomeContainerModule,
-    LoginContainerModule
+    LoginContainerModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

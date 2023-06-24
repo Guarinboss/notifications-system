@@ -1,56 +1,55 @@
 <div class="d-flex justify-content-center align-items-center login-container">
-    <form>
-        <div class="form-row">
-            <div class="col-md-12 mb-3">
-                <label for="validationServer01">Nombre</label>
-                <input type="text" class="form-control is-valid" id="validationServer01" placeholder="First name"
-                    value="Mark" required>
-                <div class="valid-feedback">
-                    Luce bien!
+    <div class="login-content">
+        <form [formGroup]="registerForm" (ngSubmit)="submitForm()" novalidate>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" formControlName="name"
+                    [ngClass]="{'is-invalid': isFieldInvalid('name'), 'is-valid': isFieldValid('name')}">
+                <div class="invalid-feedback" *ngIf="isFieldInvalid('name')">
+                    Please enter a valid name.
+                </div>
+                <div class="valid-feedback" *ngIf="isFieldValid('name')">
+                    Looks good!
                 </div>
             </div>
-            <div class="col-md-12 mb-3">
-                <label for="validationServer02">Apellido</label>
-                <input type="text" class="form-control is-valid" id="validationServer02" placeholder="Last name"
-                    value="Otto" required>
-                <div class="valid-feedback">
-                    Luce bien!
+    
+            <div class="form-group">
+                <label for="lastname">Lastname</label>
+                <input type="text" class="form-control" id="lastname" formControlName="lastname"
+                    [ngClass]="{'is-invalid': isFieldInvalid('lastname'), 'is-valid': isFieldValid('lastname')}">
+                <div class="invalid-feedback" *ngIf="isFieldInvalid('lastname')">
+                    Please enter a valid lastname.
+                </div>
+                <div class="valid-feedback" *ngIf="isFieldValid('lastname')">
+                    Looks good!
                 </div>
             </div>
-            <div class="col-md-12 mb-3">
-                <label for="validationServerUsername">Correo electronico</label>
-                <div class="input-group">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text" id="inputGroupPrepend3">@</span>
-                    </div>
-                    <input type="text" class="form-control is-invalid" id="validationServerUsername"
-                        placeholder="Correo" aria-describedby="inputGroupPrepend3" required>
-                    <div class="invalid-feedback">
-                        Por favor escoge un correo electronico valido.
-                    </div>
+    
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" formControlName="email"
+                    [ngClass]="{'is-invalid': isFieldInvalid('email'), 'is-valid': isFieldValid('email')}">
+                <div class="invalid-feedback" *ngIf="isFieldInvalid('email')">
+                    Please enter a valid email.
+                </div>
+                <div class="valid-feedback" *ngIf="isFieldValid('email')">
+                    Looks good!
                 </div>
             </div>
-        </div>
-        <div class="form-row">
-            <div class="col-md-12 mb-3">
-                <label for="validationServer05">Numero de celular</label>
-                <input type="text" class="form-control is-invalid" id="validationServer05" placeholder="Telefono" required>
-                <div class="invalid-feedback">
-                    Por favor escoge numero valido.
+    
+            <div class="form-group">
+                <label for="number">Number</label>
+                <input type="text" class="form-control" id="number" formControlName="number"
+                    [ngClass]="{'is-invalid': isFieldInvalid('number'), 'is-valid': isFieldValid('number')}">
+                <div class="invalid-feedback" *ngIf="isFieldInvalid('number')">
+                    Please enter a valid number.
+                </div>
+                <div class="valid-feedback" *ngIf="isFieldValid('number')">
+                    Looks good!
                 </div>
             </div>
-        </div>
-        <div class="form-group">
-            <div class="form-check">
-                <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" required>
-                <label class="form-check-label" for="invalidCheck3">
-                    Acuerdo con los terminos y condiciones
-                </label>
-                <div class="invalid-feedback">
-                    Tu debes estar de acuerda antes de continuar
-                </div>
-            </div>
-        </div>
-        <button class="btn btn-primary mt-4" type="submit">Guardar formulario</button>
-    </form>
+    
+            <button type="submit" class="btn btn-primary" [disabled]="registerForm.invalid">Submit</button>
+        </form>
+    </div>
 </div>
