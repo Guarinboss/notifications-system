@@ -1,4 +1,18 @@
 .login-container{
     height: 100vh;
     padding: 25px;
+    background-color: var(--color-surface-mixed-100);
 }
+
+.login-content{
+    width: clamp(300px, 50%, 500px);
+}
+
+label{
+    color: var(--light-color-primary-500);
+}
+
+.form-group{
+    padding: 8px;
+}
+

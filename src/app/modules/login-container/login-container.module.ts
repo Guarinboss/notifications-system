@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LoginContainerComponent } from './login-container.component';
+import { SharedModuleModule } from 'src/app/shared/shared-module/shared-module.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -9,7 +11,9 @@ import { LoginContainerComponent } from './login-container.component';
     LoginContainerComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    SharedModuleModule,
+    ReactiveFormsModule
   ],
   exports: [
     

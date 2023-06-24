@@ -1,1 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    /* You can add global styles to this file, and also import other style files */
+    --color-primary-100: #8727b0;
+    --color-primary-200: #9643b9;
+    --color-primary-300: #a45cc2;
+    --color-primary-400: #b273cb;
+    --color-primary-500: #c08ad4;
+    --color-primary-600: #cda1dd;
+    /** CSS DARK THEME SURFACE COLORS */
+    --color-surface-100: #121212;
+    --color-surface-200: #282828;
+    --color-surface-300: #3f3f3f;
+    --color-surface-400: #575757;
+    --color-surface-500: #717171;
+    --color-surface-600: #8b8b8b;
+    /** CSS DARK THEME MIXED SURFACE COLORS */
+    --color-surface-mixed-100: #1e1620;
+    --color-surface-mixed-200: #332b35;
+    --color-surface-mixed-300: #49424b;
+    --color-surface-mixed-400: #615a62;
+    --color-surface-mixed-500: #79737a;
+    --color-surface-mixed-600: #928d93;
+
+    --light-color-primary-500: #ffffff;
+    --light-color-primary-600: #c6c6c6;
+}
